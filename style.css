@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.header .a1 {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  margin-left: 40px;
+  font-weight: bold;
+}
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  background-color: white;
+  bottom: -6px;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+.nav a:hover::after {
+  transform: scaleX(1);
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url(./images/360_F_315403486_8TAtwx0MVwK2kbFM9YbyKJsewT0l44W2.jpg)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+.hero .content {
+  width: 100%;
+}
+.content h2 {
+  color: white;
+  font-size: 3rem;
+}
+.content p {
+  margin: 10px 0 40px 0;
+  font-weight: 500;
+  max-width: 600px;
+  color: white;
+}
+.content button {
+  text-decoration: none;
+  color: black;
+  border: 2px solid white;
+  background-color: wheat;
+  padding: 10px 40px;
+  border-radius: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.content button:hover {
+  background-color: #dd5625b6;
+  color: white;
+}
+.hero .login1 {
+  width: 60%;
+}
+.hero .login1 h2 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.hero .login1 form {
+  display: flex;
+  flex-direction: column;
+}
+.hero .login1 form .input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 40px;
+}
+.hero .login1 form .input button {
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  color: white;
+  top: 50%;
+}
+.hero .login1 form .input i {
+  position: absolute;
+  color: #fff;
+  left: 20px;
+  top: 15px;
+  pointer-events: none;
+}
+.hero .login1 form .input legend {
+  line-height: 0;
+  color: transparent;
+  margin-left: 20px;
+  transition: 0.25s;
+  font-size: 0;
+}
+.hero .login1 form .input span {
+  position: absolute;
+  margin: 0;
+  pointer-events: none;
+  transition: 0.25s;
+  left: 50px;
+  transform: translateY(-50%);
+  top: 50%;
+  font-size: 16px;
+}
+.hero .login1 form input {
+  border: none;
+  background: none;
+  border-radius: 40px;
+  padding: 15px;
+  color: white;
+  border: none;
+  width: 100%;
+  padding-left: 50px;
+  outline: none;
+}
+.hero .login1 form input:focus ~ legend {
+  font-size: 14px;
+  padding-inline: 10px;
+}
+.hero .login1 form input:focus ~ span {
+  left: 30px;
+  top: 0;
+  font-size: 14px;
+}
+.hero .login1 form input::placeholder {
+  color: white;
+}
+.hero .login2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.hero .login2 label input {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+.hero .login2 label {
+  cursor: pointer;
+}
+.hero .login2 label,
+.hero .login2 a,
+.hero .login2 p {
+  color: white;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.hero .login2 > div > input {
+  margin: 0;
+  margin-right: 10px;
+  width: 18px;
+  height: 20px;
+}
+.hero .login1 form > button {
+  background-color: #dd5625e6;
+  border: none;
+  padding: 7px 0;
+  color: white;
+  font-size: 17px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.hero .login1 form span {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.hero .login1 form span a {
+  color: white;
+}
